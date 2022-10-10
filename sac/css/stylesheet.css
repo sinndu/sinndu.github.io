@@ -1,0 +1,256 @@
+@font-face
+{
+    font-family: thirty-six-days;
+    src: url(fonts/36days.otf);
+}
+
+@font-face
+{
+    font-family: helveticaB;
+    src: url(fonts/helveticaB.ttf);
+}
+
+@font-face
+{
+    font-family: voyage-bold;
+    src: url(fonts/Voyage-Bold.otf);
+}
+
+@font-face
+{
+    font-family: helveticaB;
+    src: url(fonts/helveticaB.ttf);
+}
+
+body
+{
+    background-color: black;
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+    
+}
+
+html
+{
+    width:  100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1{
+    width:  100%;
+    height: 100%;
+    margin: 0;
+}
+
+p{
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+#videoScreen
+{
+    display:block;
+    position: fixed;
+    height:70vh;
+    width:70vw;
+    left:2vw;
+    top: 10vh;
+    border: 0.5vh solid white;
+    z-index: 3;
+}
+
+#bottomText
+{
+    position:relative;
+    top:81vh;
+    height:19vh;
+
+}
+
+#video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#headerText
+{
+    position: fixed;
+    line-height: 16vh;
+    top:84vh;
+    font-size: 10vh;
+    left:2vw;
+    font-family: helveticaB;
+    color: white;
+}
+
+#topBar
+{
+    position: relative;
+    top:-20vh;
+    height:9vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#topText
+{
+    position: fixed;
+    line-height: 9vh;
+    font-size: 6vh;
+    left:2vw;
+    top:1vh;
+    font-family: thirty-six-days;
+    color: white;
+}
+
+#time
+{
+    position: fixed;
+    line-height: 9vh;
+    font-size: 3.5vw;
+    left:89.25vw;
+    top:1vh;
+    font-family: helveticaB;
+    color: white;
+    width:8.7vw;
+    text-align: right;
+}
+
+#coolDash
+{
+    position: fixed;
+    height: 0.5vh;
+    width:60vw;
+    background-color: white;
+    top:4.5vh;
+    left:27vw;
+
+}
+
+#sideBar
+{
+    position: relative;
+    top:-18vh;
+    left:73vw;
+    height:70vh;
+    width: 26vw;
+    background-color: black;
+}
+
+.date
+{
+    position: relative;
+    overflow:hidden;
+    margin-bottom: 1vh;
+    height:11vh;
+    width: 25vw;
+}
+
+.textDate
+{
+    position: relative;
+    height:10.5vh;
+    width: 24.75vw;
+    background-color: black;
+    border: 0.25vh solid white;
+    margin-bottom: 1vh;
+}
+
+
+.gradientDate1{
+    width:100%;
+    opacity: 0.85;
+}
+
+#graidentDateText1
+{
+    position: absolute;
+    width: 25vw;
+    color:white;
+    text-align: center;
+    top:3.70vh;
+    font-size: 5vh;
+    font-family: helveticaB;
+}
+
+#graidentDateText2
+{
+    position: absolute;
+    width: 25vw;
+    color:white;
+    text-align: center;
+    top:3.4vh;
+    font-size: 5vh;
+    font-family: helveticaB;
+}
+
+.gradientDate2{
+    width:100%;
+    opacity: 0.85;
+    position: absolute;
+    top:-25vh;
+}
+
+
+.gradientDate3{
+    width:100%;
+    opacity: 0.85;
+    position: absolute;
+    top:-45vh;
+}
+
+#overlay
+{
+    position: absolute;
+    height:100vh;
+    width:100vw;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+.scroll-left {
+    height: 7vh;	
+    width:65vw;
+    left: 22vw;
+    top:2.5vh;
+    overflow: hidden;
+    position: relative;
+    background: black;
+    color: white;
+
+   }
+
+   .scroll-left p {
+    position: absolute;
+    font-family: helveticaB;
+    font-size: 2.5vw;
+    top: 28%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 10s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @keyframes scroll-left {
+    0%   {
+    transform: translateX(100%); 		
+    }
+    100% {
+    transform: translateX(-100%); 
+    }
+   }
+
+
+
