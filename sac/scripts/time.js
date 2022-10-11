@@ -1,4 +1,3 @@
-var today = new Date();
 var hours;
 var minutes;
 time();
@@ -7,6 +6,8 @@ setInterval(time, 10000);
 
 function time()
 {
+    var today = new Date();
+
     if(today.getHours() > 12)
     {
         hours = today.getHours() - 12;
