@@ -12,6 +12,10 @@ function time()
     {
         hours = today.getHours() - 12;
     }
+    else if(today.getHours() == 0)
+    {
+        hours = today.getHours() + 12;
+    }
     else
     {
         hours = today.getHours();
